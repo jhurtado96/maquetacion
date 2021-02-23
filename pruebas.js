@@ -17,7 +17,7 @@ function filtrarNombre(){
     for(let i=0;i<arrayDatos.length;i++){
         
         if(arrayDatos[i].nombre.includes("r")){
-            console.log(" " + arrayDatos[i].nombre + "empieza con R")
+            console.log(" " + arrayDatos[i].nombre + " contiene R")
         }
     }
 }
