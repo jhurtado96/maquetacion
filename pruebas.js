@@ -13,12 +13,15 @@ let dato = { "nombre":nombre,"apellidos":apellidos,"telefono":telefono,"edad:":e
 }
 
 function filtrarNombre(){
-    
+    let arrNom=[]
     for(let i=0;i<arrayDatos.length;i++){
         
         if(arrayDatos[i].nombre.includes("r")){
-            console.log(" " + arrayDatos[i].nombre + " contiene R")
+            arrNom.push([arrayDatos[i].nombre])
+            
         }
+
     }
+    document.getElementById("nombresConR").innerHTML = arrNom
 }
 
