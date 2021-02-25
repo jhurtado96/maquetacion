@@ -1,6 +1,7 @@
 class Producto {
   private nombre:string
   private precio:number
+  private cantidad:number
   constructor(nombre, precio) {
     this.nombre = nombre
     this.precio=precio
@@ -60,36 +61,16 @@ let filete = new Producto("Filete",49)
 let casa = new Producto("Casa",500)
 let arrayCarrito = new Carrito([])
 
-function meterEnCarritoSkate() {
-    arrayCarrito.getCarrito().push(skate)
+function meterEnCarrito (producto){
+    
+    arrayCarrito.getCarrito().push(producto)
+
+    if(arrayCarrito.getCarrito().includes(producto)){
+        
+    }
+
 }
 
-function meterEnCarritoPistola() {
-    arrayCarrito.getCarrito().push(pistola)
-}
-function meterEnCarritoCamiseta() {
-    arrayCarrito.getCarrito().push(camiseta)
-}
-
-function meterEnCarritoOrdenador() {
-    arrayCarrito.getCarrito().push(ordenador)
-}
-
-function meterEnCarritoCasa() {
-    arrayCarrito.getCarrito().push(casa)
-}
-function meterEnCarritoFilete() {
-    arrayCarrito.getCarrito().push(filete)
-}
-function meterEnCarritoCasco() {
-    arrayCarrito.getCarrito().push(casco)
-}
-function meterEnCarritoCarne() {
-    arrayCarrito.getCarrito().push(carne)
-}
-function meterEnCarritoRodillo() {
-    arrayCarrito.getCarrito().push(rodillo)
-}
 
 function mostrarCarritoPrecio() {
   let precioTotal = 0

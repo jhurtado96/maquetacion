@@ -43,32 +43,10 @@ var casco = new Producto("Casco", 69);
 var filete = new Producto("Filete", 49);
 var casa = new Producto("Casa", 500);
 var arrayCarrito = new Carrito([]);
-function meterEnCarritoSkate() {
-    arrayCarrito.getCarrito().push(skate);
-}
-function meterEnCarritoPistola() {
-    arrayCarrito.getCarrito().push(pistola);
-}
-function meterEnCarritoCamiseta() {
-    arrayCarrito.getCarrito().push(camiseta);
-}
-function meterEnCarritoOrdenador() {
-    arrayCarrito.getCarrito().push(ordenador);
-}
-function meterEnCarritoCasa() {
-    arrayCarrito.getCarrito().push(casa);
-}
-function meterEnCarritoFilete() {
-    arrayCarrito.getCarrito().push(filete);
-}
-function meterEnCarritoCasco() {
-    arrayCarrito.getCarrito().push(casco);
-}
-function meterEnCarritoCarne() {
-    arrayCarrito.getCarrito().push(carne);
-}
-function meterEnCarritoRodillo() {
-    arrayCarrito.getCarrito().push(rodillo);
+function meterEnCarrito(producto) {
+    arrayCarrito.getCarrito().push(producto);
+    if (arrayCarrito.getCarrito().includes(producto)) {
+    }
 }
 function mostrarCarritoPrecio() {
     var precioTotal = 0;

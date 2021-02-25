@@ -38,17 +38,7 @@
     
                 <form class="form-inline my-2 my-lg-0">
                     <div class="input-group input-group-sm">
-                        <!-- <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
-                        <div class="input-group-append">
-                            <button type="button" class="btn btn-secondary btn-number">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <a class="btn btn-success btn-sm ml-3" href="">
-                        <i class="fa fa-shopping-cart"></i> Cart
-                        <span class="badge badge-light">3</span>
-                    </a> -->
+                        
                     <button id="skate" type="button" onclick="mostrarCarritoPrecio()" class="btn btn-success btn-block">Tu carrito</button>
                     
                 </form>
@@ -92,7 +82,7 @@
                                         <p class="btn btn-danger btn-block">99.00 €</p>
                                     </div>
                                     <div class="col">
-                                        <button id="skate" type="button" onclick="meterEnCarritoSkate()" class="btn btn-success btn-block">Add to cart</button>
+                                        <button id="skate" type="button" onclick="meterEnCarrito(skate)" class="btn btn-success btn-block">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -103,13 +93,13 @@
                             <img class="card-img-top" src="img/camiseta.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title"><a href="product.html" title="View Product">Camiseta Blanca</a></h4>
-                                <p class="card-text">Camiseta blanca buena para utilizar 10 décadas y acabe siendo usado como trapo.</p>
+                                <p class="card-text">Camiseta blanca cláscia.</p>
                                 <div class="row">
                                     <div class="col">
                                         <p class="btn btn-danger btn-block">19.00 $</p>
                                     </div>
                                     <div class="col">
-                                        <button type="button" onclick="meterEnCarritoCamiseta()" class="btn btn-success btn-block">Add to cart</button>
+                                        <button type="button" onclick="meterEnCarrito(camiseta)" class="btn btn-success btn-block">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -120,13 +110,13 @@
                             <img class="card-img-top" src="img/ordenador.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title"><a href="product.html" title="View Product">Ordenador Gaming</a></h4>
-                                <p class="card-text">Ordenador Gaming para jugar al lol a 15fps.</p>
+                                <p class="card-text">Ordenador Gaming para jugar a videojuegos.</p>
                                 <div class="row">
                                     <div class="col">
                                         <p class="btn btn-danger btn-block">1999.00 $</p>
                                     </div>
                                     <div class="col">
-                                        <button type="button" onclick="meterEnCarritoOrdenador()" class="btn btn-success btn-block">Add to cart</button>
+                                        <button type="button" onclick="meterEnCarrito(ordenador)" class="btn btn-success btn-block">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -136,14 +126,14 @@
                         <div class="card">
                             <img class="card-img-top" src="img/pistola.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                                <p class="card-text">Pistola rosa de mariconas, regalo perfecto para tu mujer si eres un colgao de Kansas.</p>
+                                <h4 class="card-title"><a href="product.html" title="View Product">Pistola Rosa</a></h4>
+                                <p class="card-text">Pistola de agua para los peques de la casa</p>
                                 <div class="row">
                                     <div class="col">
                                         <p class="btn btn-danger btn-block">199.00 $</p>
                                     </div>
                                     <div class="col">
-                                         <button type="button" onclick="meterEnCarritoPistola()" class="btn btn-success btn-block">Add to cart</button>
+                                         <button type="button" onclick="meterEnCarrito(pistola)" class="btn btn-success btn-block">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +150,7 @@
                                         <p class="btn btn-danger btn-block">29.00 $</p>
                                     </div>
                                     <div class="col">
-                                        <button type="button" onclick="meterEnCarritoRodillo()" class="btn btn-success btn-block">Add to cart</button>
+                                        <button type="button" onclick="meterEnCarrito(rodillo)" class="btn btn-success btn-block">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +167,7 @@
                                         <p class="btn btn-danger btn-block">99.00 $</p>
                                     </div>
                                     <div class="col">
-                                        <button type="button" onclick="meterEnCarritoCarne()" class="btn btn-success btn-block">Add to cart</button>
+                                        <button type="button" onclick="meterEnCarrito(carne)" class="btn btn-success btn-block">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -194,7 +184,7 @@
                                         <p class="btn btn-danger btn-block">69.00 $</p>
                                     </div>
                                     <div class="col">
-                                        <button type="button" onclick="meterEnCarritoCasco()" class="btn btn-success btn-block">Add to cart</button>
+                                        <button type="button" onclick="meterEnCarrito(casco)" class="btn btn-success btn-block">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +201,7 @@
                                         <p class="btn btn-danger btn-block">49.00 $</p>
                                     </div>
                                     <div class="col">
-                                        <button type="button" onclick="meterEnCarritoFilete()" class="btn btn-success btn-block">Add to cart</button>
+                                        <button type="button" onclick="meterEnCarrito(filete)" class="btn btn-success btn-block">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -228,7 +218,7 @@
                                         <p class="btn btn-danger btn-block">500.00 $</p>
                                     </div>
                                     <div class="col">
-                                        <button type="button" onclick="meterEnCarritoCasa()" class="btn btn-success btn-block">Add to cart</button>
+                                        <button type="button" onclick="meterEnCarrito(casa)" class="btn btn-success btn-block">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
